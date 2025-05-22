@@ -1,5 +1,5 @@
 {% set name = "ydb-dbapi" %}
-{% set version = "0.1.11" %}
+{% set version = "0.1.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ydb_dbapi-{{ version }}.tar.gz
-  sha256: e9e9d7cf0ac1817c556198e3e1f00218855c0b250c57e26cefeaf0b35de37eff
+  sha256: 8aa024bb413af66727451b03142fb1974697905229814b5a9970e31dcb489f2b
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - ydb >=3.18.13,<4.0.0
+    - ydb >=3.18.16,<4.0.0
 
 test:
   imports:
