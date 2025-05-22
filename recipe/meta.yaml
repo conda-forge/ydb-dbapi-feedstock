@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - ydb >=3.18.13,<4.0.0
+    - ydb >=3.18.16,<4.0.0
 
 test:
   imports:
