@@ -1,5 +1,5 @@
 {% set name = "ydb-dbapi" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/ydb_dbapi-{{ version }}.tar.gz
-  sha256: fcf485c3c782d7ee3840239892e1c27217b53a19efcc289fa8218440f9413f6d
+  sha256: 8fc5188d8b2b6a9afc02671705e303becaefa0ebfb27ba483b985a90b62d736e
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<4.0
     - ydb >=3.21.6,<4.0.0
 
 test:
