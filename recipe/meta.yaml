@@ -20,7 +20,7 @@ requirements:
     - poetry-core
     - pip
   run:
-    - python >={{ python_min }}
+    - python >={{ python_min }},<4.0
     - ydb >=3.21.6,<4.0.0
 
 test:
