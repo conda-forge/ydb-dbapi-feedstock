@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ydb-dbapi
-  version: "0.1.21"
+  version: "0.1.22"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ydb_dbapi-${{ version }}.tar.gz
-  sha256: 8a305fd1b719705834da0f8a47c2ba913a393db256cf6ac7a7e6c8ca0d108990
+  sha256: 79df761d2bd67d532a7bae2e9a155f2f083e8de9a71c8398bbdeaceca692677f
 
 build:
   number: 0
