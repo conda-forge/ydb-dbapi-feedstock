@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ydb-dbapi
-  version: "0.1.22"
+  version: "0.1.23"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/ydb_dbapi-${{ version }}.tar.gz
-  sha256: 79df761d2bd67d532a7bae2e9a155f2f083e8de9a71c8398bbdeaceca692677f
+  sha256: 4012ac488c7698a57be634f5de563c81fa8edbc737c8fa4418884897790d1b57
 
 build:
   number: 0
@@ -20,8 +20,8 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - poetry-core
     - pip
+    - poetry-core
   run:
     - python >=${{ python_min }},<4.0
     - ydb >=3.26.7,<4.0.0
