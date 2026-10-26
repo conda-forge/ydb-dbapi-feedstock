@@ -30,7 +30,9 @@ tests:
       imports:
         - ydb_dbapi
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: YDB Python DBAPI which complies with PEP 249
